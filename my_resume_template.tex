@@ -17,7 +17,7 @@
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
-
+\usepackage{etoolbox}
 % adjust the page margins
 \usepackage[scale=0.85]{geometry}
 % \setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
@@ -54,7 +54,7 @@
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-
+\vspace*{-9mm}
 \section{Education}
 % \cventry{In Progress}{Android Developer Nanodegree}{Udacity}{}{}{}
 \cventry{2014.8--present}{Master of Science, Computer Science}{University at Buffalo, SUNY}{Amherst, NY}{\textit{GPA:3.38}}{ Courses: Operating Systems, Distributed Systems, Design and Analysis of Algorithms, Applied Cryptography, Information Retrieval, Wireless Network Security, Software Engineering, Machine Learning} 
@@ -94,8 +94,8 @@ waitpid) on OS161, an instructional operating system.}
 {\textbf{News Indexer: }Developed an application that can parse, tokenize and index a news corpus of 10,000 news articles. The index is used to retrieve results using Apache Solr.}
 % \subsection{Other}
 
-% \cvitem {Web}
-% {\textbf{XMLWeb – A Database and Web Application: }Coded a Java application that processes XML files and produces a HTML file that displays data input form which also performs validation, an MySQL script file to create relational tables for the data, and PHP files for processing the data submitted by the user.}
+\cvitem {Web}
+{\textbf{XMLWeb – A Database and Web Application: }Coded a Java application that processes XML files and produces a HTML file that displays data input form which also performs validation, an MySQL script file to create relational tables for the data, and PHP files for processing the data submitted by the user.}
 \clearpage
 \thispagestyle{empty}
 \end{document}

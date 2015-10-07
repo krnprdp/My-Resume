@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2015.5.24)  7 OCT 2015 00:21
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2015.5.24)  7 OCT 2015 01:38
  restricted \write18 enabled.
 **my_resume_template.tex
 (./my_resume_template.tex
@@ -771,7 +771,7 @@ luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
 luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
 luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
 luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
-luaotfload | main : fontloader loaded in 0.040 seconds
+luaotfload | main : fontloader loaded in 0.033 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1451,7 +1451,7 @@ Here is how much of LuaTeX's memory you used:
 4 glyph, 632 attribute, 76 glue_spec, 487 attribute_list, 4 action, 3 write, 1 l
 ocal_par, 209 pdf_literal, 4 pdf_start_link, 4 pdf_end_link, 10 pdf_colorstack n
 odes
-   avail lists: 1:1,2:7588,3:355,4:1099,5:135,6:2469,7:154,8:11,9:337,10:246
+   avail lists: 1:1,2:8473,3:363,4:1192,5:154,6:2755,7:169,8:11,9:353,10:272
  37531 multiletter control sequences out of 65536+600000
  54 fonts using 3924791 bytes
  69i,12n,62p,1176b,773s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1463,7 +1463,7 @@ otf></usr/local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmsans10-obliqu
 e.otf></usr/local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmsans17-regu
 lar.otf><</usr/local/texlive/2015/texmf-dist/fonts/type1/public/marvosym/marvosy
 m.pfb>
-Output written on my_resume_template.pdf (1 page, 46564 bytes).
+Output written on my_resume_template.pdf (1 page, 47237 bytes).
 
 PDF statistics: 84 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream

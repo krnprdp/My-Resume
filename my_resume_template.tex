@@ -1,0 +1,103 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%  Copyright 2014-2015 Pradeep Kiran Chakkirala (pchakkir@buffaloe.edu).
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\usepackage{fontawesome}
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+% \setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+\setlength{\makecvtitlenamewidth}{15cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\setlength{\hintscolumnwidth}{2.5cm}	
+
+% personal data
+\name{Pradeep Kiran}{Chakkirala}
+% \title{\social[github]{krnprdp}}    
+\address{1400 Millersport Hwy \# 302}{Buffalo, NY 14221}
+\mobile{(716) 429 7890}
+\email{pchakkir@buffalo.edu}
+\homepage{www.pradeepkiran.me}
+\social[linkedin]{pradeepkiran}                        
+\social[github]{krnprdp}
+
+% \extrainfo{}           
+% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{}  
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+% \cventry{In Progress}{Android Developer Nanodegree}{Udacity}{}{}{}
+\cventry{2014.8--present}{Master of Science, Computer Science}{University at Buffalo, SUNY}{Amherst, NY}{\textit{GPA:3.38}}{ Courses: Operating Systems, Distributed Systems, Design and Analysis of Algorithms, Applied Cryptography, Information Retrieval, Wireless Network Security, Software Engineering, Machine Learning} 
+\cventry{2010.7--2014.5}{Bachelor of Technology, Computer Science and Engg.}{GITAM University}{India}{}{\textit{First Class with Distinction}}
+
+% \section{Courses}
+% \cvitem{}{Operating Systems, Distributed Systems, Design and Analysis of Algorithms, Applied Cryptography, Information Retrieval, Wireless Network Security, Software Engineering, Machine Learning}
+
+\section{Technical Skills}
+\cvline{Languages}{C, C++, Java, Python, SQL}{}
+\cvline{Web}{PHP, JavaScript, HTML, CSS}{}
+\cvline{Platforms}{Android, .NET}{}
+\cvline{Tools}{Git, Vim, Gdb, \LaTeX{}}{}
+
+\section{Experience}
+\cventry{2013.5--2013.6}{Software Developer Intern}{Dept. of IT, Visakhapatnam Steel Plant}{India}{}{Real-time implementation experience in the migration of the DNW Department’s manual entry process to a computerized system in .NET framework using C\# .NET and SQL Server 08.} \newline{}%
+
+\section{Projects}
+% \subsection{Academic}
+\cvitem {ANDROID}
+{\textbf{Amazon Dynamo: }Designed and implemented a replicated key-value storage system on lines of Amazon Dynamo on the Android
+platform. Supports partitioning, replication and failure handling. Data is stored across multiple android app instances
+in local SQLite databases.}
+\cvitem {}
+{\textbf{Rooted? | Android App on Google Play: }Developed and published an application, ‘Rooted?’ which verifies root access and
+busybox installation and also provides root information. The app has over 25k downloads and has garnered many positive reviews. }
+\cvitem {}
+{\textbf{Guard | Enhancing current security practices using wearable devices: }An analysis of using smart wearable devices for gesture recognition and 2FA to enhance currently available security mechanisms. Implemented on Android Wear.}
+
+\cvitem {C}
+{\textbf{Synchronization Primitives and System Calls for OS161: }Implemented locks, reader-writer locks, condition variables for synchronization among multiple threads. Designed
+and Implemented File system calls (open, close, read, write, lseek, dup2) and Process Support (fork, execv, getpid,
+waitpid) on OS161, an instructional operating system.}
+\cvitem {C++}
+{\textbf{Remote File Sharing System: }Created a hybrid network application based on client-server and p2p communication for file sharing among multiple systems connected in a network using socket programming.}
+\cvitem {Java}
+{\textbf{News Indexer: }Developed an application that can parse, tokenize and index a news corpus of 10,000 news articles. The index is used to retrieve results using Apache Solr.}
+% \subsection{Other}
+
+% \cvitem {Web}
+% {\textbf{XMLWeb – A Database and Web Application: }Coded a Java application that processes XML files and produces a HTML file that displays data input form which also performs validation, an MySQL script file to create relational tables for the data, and PHP files for processing the data submitted by the user.}
+\clearpage
+\thispagestyle{empty}
+\end{document}
+
+%% end of file.
